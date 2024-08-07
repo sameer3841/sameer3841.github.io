@@ -286,6 +286,15 @@
 		})
 	};
 
+	var scrollToNextSection = function() {
+		const currentSection = document.activeElement.closest('section');
+		const nextSection = currentSection.nextElementSibling;
+	  
+		if (nextSection) {
+		  nextSection.scrollIntoView();
+		}
+	  };
+
 	// Document on load.
 	$(function(){
 		fullHeight();
@@ -304,7 +313,9 @@
 		sliderMain();
 		stickyFunction();
 		owlCrouselFeatureSlide();
+		scrollToNextSection();
 	});
 
+	
 
 }());
