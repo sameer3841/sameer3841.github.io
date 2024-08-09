@@ -23,9 +23,9 @@ body {
 
 a {
   color: #2079c7;
-  -webkit-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s; }
+  -webkit-transition: 1.0s;
+  -o-transition: 1.0s;
+  transition: 1.0s; }
   a:hover, a:active, a:focus {
     color: #ff0000;
     outline: none;
@@ -1187,10 +1187,13 @@ body.offcanvas {
 .btn-primary {
   background: #2c98f0;
   color: #fff;
-  border: 2px solid #2c98f0; }
+  border: 2px solid #2c98f0; 
+  -webkit-transition: 1.0s;
+  -o-transition: 1.0s;
+  transition: 1.0s;}
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-    background: #44a4f2 !important;
-    border-color: #44a4f2 !important; }
+    background: #ff0000 !important;
+    border-color: #e90000 !important; }
   .btn-primary.btn-outline {
     background: transparent;
     color: #2c98f0;
