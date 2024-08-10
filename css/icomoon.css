@@ -1788,4 +1788,6 @@
 .icon-IcoMoon:before {
   content: "\eb1a";
 }
-
+.icon-social-discord:before {
+  content: url('../images/discord.svg');
+}
