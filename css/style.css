@@ -40,6 +40,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   margin: 0 0 30px 0; }
 
+
+
 figure {
   margin-bottom: 2.5em;
   float: left;
@@ -557,7 +559,7 @@ body.offcanvas {
   line-height: 40px;
   float: left; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
-    color: #fff; }
+    color: whitesmoke; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
     background: #ed7b17; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
