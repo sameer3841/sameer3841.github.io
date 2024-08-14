@@ -547,7 +547,7 @@ body.offcanvas {
   display: block;
   width: 40px;
   height: 40px;
-  background: #ec5453;
+  background: #e8393f;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -559,11 +559,11 @@ body.offcanvas {
   line-height: 40px;
   float: left; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
-    color: whitesmoke; }
+    color: rgb(0, 0, 0); }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
-    background: #ed7b17; }
+    background: #F47D26; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
-    background: #f5b732; }
+    background: #FFC107; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
     background: #a84cb8; }
   .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
@@ -1039,7 +1039,10 @@ body.offcanvas {
   padding: 3em 0;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center center; }
+  background-position: center center; 
+}
+
+
   .colorlib-counters .overlay {
     z-index: 0;
     position: absolute;
