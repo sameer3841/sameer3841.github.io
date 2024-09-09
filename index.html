@@ -589,7 +589,7 @@
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
 											<span><a><i class="icon-eye"></i><a id="clickCount1">0</a></a></span>
-											<span><a onclick="incrementLikes()"><i class="icon-heart"></i><a id="likeCount1" onclick="incrementLikes()"></a></a></span>
+											<span><a onclick="incrementLikes1()"><i class="icon-heart"></i><a id="likeCount1" onclick="incrementLikes1()"></a></a></span>
 										</p>
 
 										<script>
@@ -605,7 +605,7 @@
 											let likeCount1 = localStorage.getItem('likeCount1') ? parseInt(localStorage.getItem('likeCount1')) : 0;
 											document.getElementById('likeCount1').textContent = likeCount1;
 											let isLiked1 = false;
-											function incrementLikes(){
+											function incrementLikes1(){
 												if(!isLiked1) likeCount1++;
 												else likeCount1--;
 												isLiked1 = !isLiked1;
@@ -626,7 +626,7 @@
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
 											<span><a href="#"><i class="icon-eye"></i></a><a id="clickCount2">0</a></span>
-											<span><a onclick="incrementLikes()"><i class="icon-heart"></i><a id="likeCount2" onclick="incrementLikes()"></a></a></span>
+											<span><a onclick="incrementLikes2()"><i class="icon-heart"></i><a id="likeCount2" onclick="incrementLikes2()"></a></a></span>
 										</p>
 
 										<script>
@@ -642,7 +642,7 @@
 											let likeCount2 = localStorage.getItem('likeCount2') ? parseInt(localStorage.getItem('likeCount2')) : 0;
 											document.getElementById('likeCount2').textContent = likeCount2;
 											let isLiked2 = false;
-											function incrementLikes(){
+											function incrementLikes2(){
 												if(!isLiked2) likeCount2++;
 												else likeCount2--;
 												isLiked2 = !isLiked2;
