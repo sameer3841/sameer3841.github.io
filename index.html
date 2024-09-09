@@ -279,19 +279,19 @@
 					</div>
 					<div class="row">
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="12" data-speed="10000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="6000" data-refresh-interval="100"></span>
 							<span class="colorlib-counter-label">Certifications</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="55" data-speed="10000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="56" data-speed="6000" data-refresh-interval="100"></span>
 							<span class="colorlib-counter-label">Projects</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="10000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="4" data-speed="6000" data-refresh-interval="100"></span>
 							<span class="colorlib-counter-label">Jobs</span>
 						</div>
 						<div class="col-md-3 text-center animate-box">
-							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="10000" data-refresh-interval="50"></span>
+							<span class="colorlib-counter js-counter" data-from="0" data-to="10" data-speed="6000" data-refresh-interval="100"></span>
 							<span class="colorlib-counter-label">Partners</span>
 						</div>
 					</div>
@@ -584,13 +584,35 @@
 							<div class="project" style="background-image: url(images/SnakeGame.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="https://github.com/sameer3841/Snake_Game">Snake Game</a></h3>
+										<h3><a href="https://github.com/sameer3841/Snake_Game" id="myLink1" target="_blank">Snake Game</a></h3>
 										<span>Game</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a><i class="icon-eye"></i><a id="clickCount1">0</a></a></span>
+											<span><a onclick="incrementLikes()"><i class="icon-heart"></i><a id="likeCount1" onclick="incrementLikes()"></a></a></span>
 										</p>
+
+										<script>
+											let count1 = localStorage.getItem('clickCount1') ? parseInt(localStorage.getItem('clickCount1')) : 0;
+									
+											document.getElementById('clickCount1').textContent = count1;
+											document.getElementById('myLink1').addEventListener('click', function(event) {
+												count1++;  // Increment the count
+												document.getElementById('clickCount1').innerText = count1;  // Update the count display
+												localStorage.setItem('clickCount1', count1); // Store the updated count in localStorage
+												});
+											
+											let likeCount1 = localStorage.getItem('likeCount1') ? parseInt(localStorage.getItem('likeCount1')) : 0;
+											document.getElementById('likeCount1').textContent = likeCount1;
+											let isLiked1 = false;
+											function incrementLikes(){
+												if(!isLiked1) likeCount1++;
+												else likeCount1--;
+												isLiked1 = !isLiked1;
+												document.getElementById('likeCount1').textContent = likeCount1;
+												localStorage.setItem('likeCount1', likeCount1);
+											}
+										</script>
 									</div>
 								</div>
 							</div>
@@ -599,13 +621,35 @@
 							<div class="project" style="background-image: url(images/MPBlog.png);">
 								<div class="desc">
 									<div class="con">
-										<h3><a href="https://github.com/sameer3841/mp-app">Mid Program Blog <strong>(React)</strong></a></h3>
+										<h3><a href="https://github.com/sameer3841/mp-app" id="myLink2" target="_blank">Mid Program Blog <strong>(React)</strong></a></h3>
 										<span>Website</span>
 										<p class="icon">
 											<span><a href="#"><i class="icon-share3"></i></a></span>
-											<span><a href="#"><i class="icon-eye"></i> 100</a></span>
-											<span><a href="#"><i class="icon-heart"></i> 49</a></span>
+											<span><a href="#"><i class="icon-eye"></i></a><a id="clickCount2">0</a></span>
+											<span><a onclick="incrementLikes()"><i class="icon-heart"></i><a id="likeCount2" onclick="incrementLikes()"></a></a></span>
 										</p>
+
+										<script>
+											let count2 = localStorage.getItem('clickCount2') ? parseInt(localStorage.getItem('clickCount2')) : 0;
+									
+											document.getElementById('clickCount2').textContent = count2;
+											document.getElementById('myLink2').addEventListener('click', function(event) {
+												count2++;  // Increment the count
+												document.getElementById('clickCount2').innerText = count2;  // Update the count display
+												localStorage.setItem('clickCount2', count2); // Store the updated count in localStorage
+												});
+											
+											let likeCount2 = localStorage.getItem('likeCount2') ? parseInt(localStorage.getItem('likeCount2')) : 0;
+											document.getElementById('likeCount2').textContent = likeCount2;
+											let isLiked2 = false;
+											function incrementLikes(){
+												if(!isLiked2) likeCount2++;
+												else likeCount2--;
+												isLiked2 = !isLiked2;
+												document.getElementById('likeCount2').textContent = likeCount2;
+												localStorage.setItem('likeCount2', likeCount2);
+											}
+										</script>
 									</div>
 								</div>
 							</div>
@@ -694,7 +738,7 @@
 								<div class="desc">
 									<span><small>May 29, 2024 </small> | <small> UX Design </small></span>
 									<h3><a href="https://www.coursera.org/account/accomplishments/specialization/8Y3XBW4Q2JHT">Google UX Design</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>A 7-course program teaching the essentials of UX design and UX Research for creating a developing app at Google.</p>
 								</div>
 							</div>
 						</div>
@@ -704,7 +748,7 @@
 								<div class="desc">
 									<span><small>March 13, 2024 </small> | <small> Java </small></span>
 									<h3><a href="https://www.hackerrank.com/certificates/923fb571d532">Java (Basic)</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>A certification assessment that provides technical interview assessment questions expected for Java only.</p>
 								</div>
 							</div>
 						</div>
@@ -714,7 +758,7 @@
 								<div class="desc">
 									<span><small>March 17, 2024 </small> | <small> Python </small></span>
 									<h3><a href="https://www.hackerrank.com/certificates/bb4ab1aeb716">Python (Basic)</a></h3>
-									<p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+									<p>A certification assessment that provides technical interview assessment questions expected for Python only.</p>
 								</div>
 							</div>
 						</div>
@@ -796,7 +840,6 @@
 										</div>
 									</form>
 								</div>
-								
 							</div>
 						</div>
 					</div>

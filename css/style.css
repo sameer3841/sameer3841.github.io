@@ -1113,7 +1113,9 @@ body.offcanvas {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             -ms-border-radius: 4px;
-            border-radius: 4px; }
+            border-radius: 0px; 
+            cursor: pointer;
+          }
         .project .desc .con .icon i {
           font-size: 16px;
           color: #333333; }
