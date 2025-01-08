@@ -370,9 +370,31 @@
 							<div class="progress-wrap">
 								<h3>Python</h3>
 								<div class="progress">
-								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
-								  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
-								    <span>90%</span>
+								 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span>85%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="progress-wrap">
+								<h3>Swift</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-7" role="progressbar" aria-valuenow="80"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+								<span>80%</span>
+								  	</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+							<div class="progress-wrap">
+								<h3>Kotlin</h3>
+								<div class="progress">
+								 	<div class="progress-bar color-8" role="progressbar" aria-valuenow="85"
+								  	aria-valuemin="0" aria-valuemax="100" style="width:85%">
+								    <span>85%</span>
 								  	</div>
 								</div>
 							</div>
@@ -536,23 +558,23 @@
 					                  <i class="icon-globe2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">Undergraduate Research Assistant at <strong>Howard University (RITA UARC)</strong></a> <span>May 2024 - Present</span></h2>
+					               	<h2><a href="#">Undergraduate Research Assistant at <strong>Howard University (RITA UARC)</strong></a> <span>June 2024 - October 2024</span></h2>
 					                  <p>I am a machine learning researcher focused on analyzing and predicting neural activities in the human brain using advanced techniques such as deep learning and neural networks. I collaborated closely supervisor and team in utilizing our expertise in data analysis, algorithm development, and neural data processing to enhance our understanding of brain function.</p>
 					               </div>
 					            </div>
 					         </article>
 
-					         <!-- <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
+					         <article class="timeline-entry animate-box" data-animate-effect="fadeInLeft">
 					            <div class="timeline-entry-inner">
 					               <div class="timeline-icon color-5">
 					                  <i class="icon-pen2"></i>
 					               </div>
 					               <div class="timeline-label">
-					               	<h2><a href="#">UI/UX Designer at Envato</a> <span>2017-2018</span></h2>
-					                  <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					               	<h2><a href="#">Research Assistant at <strong>Delaware State University</strong></a> <span>June 2024 - Present</span></h2>
+					                  <p>In my role as a Research Assistant, I am developing a Battleship-like game that integrates Quantum Computing principles. Using Godot Engine and GDScript, I research and implement quantum algorithms that influence the game's mechanics. I test and refine innovative gameplay elements driven by quantum concepts, while contributing to the design and development of the project.</p>
 					               </div>
 					            </div>
-					         </article> -->
+					         </article>
 
 					        <article class="timeline-entry begin animate-box" data-animate-effect="fadeInBottom">
 					            <div class="timeline-entry-inner">
@@ -648,6 +670,43 @@
 												isLiked2 = !isLiked2;
 												document.getElementById('likeCount2').textContent = likeCount2;
 												localStorage.setItem('likeCount2', likeCount2);
+											}
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+							<div class="project" style="background-image: url(images/bit-souls.png);">
+								<div class="desc">
+									<div class="con">
+										<h3><a href="https://sameer3841.itch.io/bit-souls" id="myLink3" target="_blank">Bit-Souls</a></h3>
+										<span>Website</span>
+										<p class="icon">
+											<!-- <span><a href="#"><i class="icon-share3"></i></a></span> -->
+											<span><a href="#"><i class="icon-eye"></i></a><a id="clickCount3">0</a></span>
+											<span><a onclick="incrementLikes2()"><i class="icon-heart"></i><a id="likeCount3" onclick="incrementLikes3()"></a></a></span>
+										</p>
+
+										<script>
+											let count3 = localStorage.getItem('clickCount3') ? parseInt(localStorage.getItem('clickCount3')) : 0;
+									
+											document.getElementById('clickCount3').textContent = count3;
+											document.getElementById('myLink3').addEventListener('click', function(event) {
+												count3++;  // Increment the count
+												document.getElementById('clickCount3').innerText = count3;  // Update the count display
+												localStorage.setItem('clickCount3', count3); // Store the updated count in localStorage
+												});
+											
+											let likeCount3 = localStorage.getItem('likeCount3') ? parseInt(localStorage.getItem('likeCount3')) : 0;
+											document.getElementById('likeCount3').textContent = likeCount3;
+											let isLiked3 = false;
+											function incrementLikes3(){
+												if(!isLiked3) likeCount3++;
+												else likeCount3--;
+												isLiked3 = !isLiked3;
+												document.getElementById('likeCount3').textContent = likeCount3;
+												localStorage.setItem('likeCount3', likeCount3);
 											}
 										</script>
 									</div>
