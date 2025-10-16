@@ -1,0 +1,49 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f8f8" rx="10" ry="10" />
+  
+  <!-- Left C (facing left) -->
+  <path d="M140,80 C180,80 210,130 210,150 C210,170 180,220 140,220 C120,220 105,210 95,195 L115,175 C120,185 130,190 140,190 C160,190 180,170 180,150 C180,130 160,110 140,110 C130,110 120,115 115,125 L95,105 C105,90 120,80 140,80 Z" fill="#3498db" />
+  
+  <!-- Right C (facing right) -->
+  <path d="M260,80 C220,80 190,130 190,150 C190,170 220,220 260,220 C280,220 295,210 305,195 L285,175 C280,185 270,190 260,190 C240,190 220,170 220,150 C220,130 240,110 260,110 C270,110 280,115 285,125 L305,105 C295,90 280,80 260,80 Z" fill="#3498db" />
+  
+  <!-- Pupil for left eye (static) -->
+  <circle cx="140" cy="150" r="20" fill="#2c3e50" />
+  
+  <!-- Light reflection in left pupil -->
+  <circle cx="135" cy="145" r="7" fill="white" />
+  
+  <!-- Right eye elements -->
+  <!-- Open eye state -->
+  <g id="openEye">
+    <circle cx="260" cy="150" r="20" fill="#2c3e50" />
+    <circle cx="255" cy="145" r="7" fill="white" />
+  </g>
+  
+  <!-- Closed/winking eye state -->
+  <path id="closedEye" d="M240,150 Q260,130 280,150" stroke="#2c3e50" stroke-width="8" stroke-linecap="round" fill="none" style="opacity: 0;" />
+  
+  <!-- Animation for winking only once -->
+  <style>
+    @keyframes singleWink {
+      0%, 40% { opacity: 1; }
+      45%, 55% { opacity: 0; }
+      60%, 100% { opacity: 1; }
+    }
+    
+    @keyframes showSingleWink {
+      0%, 40% { opacity: 0; }
+      45%, 55% { opacity: 1; }
+      60%, 100% { opacity: 0; }
+    }
+    
+    #openEye {
+      animation: singleWink 5s ease-in-out infinite;
+    }
+    
+    #closedEye {
+      animation: showSingleWink 5s ease-in-out infinite;
+    }
+  </style>
+</svg>
